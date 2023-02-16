@@ -75,4 +75,3 @@ def update_user_by_id(user_id):
             setattr(user, key, value)
     storage.save()
     return jsonify(user.to_dict()), 200
-
